@@ -30,7 +30,16 @@
 ### Installation
 - **Install dependencies:** `npm install`
 
-**Note:** There are no test, lint, or e2e commands currently configured. Type checking is strict and runs during build.
+### Testing
+- **Run tests:** `npm test`
+- **Watch mode:** `npm run test:watch` (for development)
+- **Framework:** Vitest with React Testing Library
+
+### Code Quality
+- **Lint code:** `npm run lint`
+- **Type check:** `tsc`
+
+**Note:** Type checking runs automatically before build. Tests are required before merging.
 
 ---
 

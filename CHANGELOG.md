@@ -15,6 +15,9 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 - Configuración de pipeline CI/CD con GitHub Actions
 - Despliegue automático a Netlify
 - Documentación completa (README, AGENTS, CONTRIBUTING)
+- **Framework de testing con Vitest**
+- **Smoke tests para componentes principales**
+- **Pipeline CI/CD con stages de test y lint**
 
 ### Características Técnicas
 - Frontend desarrollado con React 19 + TypeScript
@@ -22,12 +25,17 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 - Styling: Tailwind CSS 4
 - Animaciones: Framer Motion 12
 - Iconografía: Lucide React
+- Testing: Vitest + React Testing Library
+- Node.js 22 en pipeline de CI/CD
 
 ### Infrastructure
 - GitHub Actions para CI/CD
 - Netlify para hosting y CDN
 - Estrategia de branching: GitFlow
 - Conventional Commits para mensajes de commit
+- Jobs separados: CI (test+lint+build) y CD (deploy)
+- Artifacts upload/download entre jobs
+- Deploy preview para Pull Requests
 
 ---
 
@@ -37,7 +45,7 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 - [ ] Implementar autenticación de usuarios
 - [ ] Agregar panel de administración
 - [ ] Integración con base de datos backend
-- [ ] Tests unitarios con Jest/Vitest
+- [x] ~~Tests unitarios con Jest/Vitest~~ (Completado en v1.0.0)
 - [ ] Sistema de notificaciones
 
 ---
