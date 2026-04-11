@@ -143,46 +143,6 @@ Infraestructura:
 - **Rollback rápido**: Si hay problemas, se puede volver al tag anterior
 - **Ambientes separados**: Develop para pruebas, Main para producción
 
-### 1.3 Diagrama del Flujo GitFlow
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                                                                  │
-│                        MAIN (Producción)                         │
-│                    ■─────────────────■                           │
-│                   │    v1.0.0      │                            │
-│                   │    v1.1.0      │                            │
-│                   │    v1.2.0 (H)  │  ← Hotfix                  │
-│                   └───────▲────────┘                             │
-│                           │                                       │
-│                           │ Merge (Release)                       │
-│                           │                                       │
-│                ┌──────────┴──────────┐                           │
-│                │                     │                            │
-│                │    DEVELOP          │                            │
-│                │  (Pre-producción)   │                            │
-│                │  ●─────────●───────●│                            │
-│                │    ↑        ↑       ↑                            │
-│                │    │        │       │                            │
-│                │    │        │       │                            │
-│                │    │        │       │                            │
-│    ┌───────────┘    │        │       └───────────┐                │
-│    │                │        │                    │                │
-│    ▼                ▼        ▼                    ▼                │
-│ ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐           │
-│ │ feature/ │  │ feature/ │  │ feature/ │  │  hotfix/ │           │
-│ │reservas  │  │galeria   │  │testimonios│  │bug-nav  │           │
-│ └──────────┘  └──────────┘  └──────────┘  └──────────┘           │
-│                                                                  │
-└─────────────────────────────────────────────────────────────────┘
-
-Leyenda:
-● = Commit
-▲ = Merge
-(H) = Hotfix merge
-```
-
----
 
 ## Guía de Buenas Prácticas
 
@@ -440,51 +400,6 @@ NETLIFY_SITE_ID=xxxxx_id_del_sitio
 
 ---
 
-## Trazabilidad de Cambios
-
-### 6.1 Registro de Features
-
-#### Feature 1: Sistema de Reservas con Calendario
-
-```yaml
-Rama: feature/reservas-calendario
-Commit inicial: a1b2c3d
-Commit final: e4f5g6h
-Pull Request: #1
-Fecha: [FECHA_IMPLEMENTACIÓN]
-Estado: ✅ Merged a main
-
-Descripción:
-- Implementación de calendario interactivo
-- Selección de fecha y hora
-- Integración con servicios de barbería
-- Validación de disponibilidad
-
-[![Tests](https://github.com/$(github_repo)/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/$(github_repo)/actions/workflows/test.yml)
-
-# Run and deploy your AI Studio app
-
-#### Feature 2: Galería de Trabajos
-
-```yaml
-Rama: feature/galeria-imagenes
-Commit inicial: i7j8k9l
-Commit final: m10n11o
-Pull Request: #2
-Fecha: [FECHA_IMPLEMENTACIÓN]
-Estado: ✅ Merged a main
-
-Descripción:
-- Galería de imágenes con Grid layout
-- Optimización de imágenes
-- Efectos de hover con Framer Motion
-- Diseño responsive
-
-Comandos usados:
-git checkout -b feature/galeria-imagenes
-git commit -m "feat(gallery): agregar galería de trabajos"
-git push origin feature/galeria-imagenes
-```
 
 ### 6.2 Registro de Hotfixes
 
@@ -847,33 +762,3 @@ SOFTWARE.
 | **Deploy** | Despliegue a producción |
 | **Preview** | Previsualización de cambios |
 
-### B. Recursos Adicionales
-
-- [Documentación de React](https://react.dev)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
-- [Vite Guide](https://vitejs.dev/guide/)
-- [GitFlow Original](https://nvie.com/posts/a-successful-git-branching-model/)
-- [Conventional Commits](https://www.conventionalcommits.org/)
-- [GitHub Actions Documentation](https://docs.github.com/actions)
-- [Netlify Docs](https://docs.netlify.com/)
-
-### C. Cambios en este Documento
-
-| Versión | Fecha | Autor | Descripción |
-|---------|-------|-------|-------------|
-| 1.0.0 | 2024-XX-XX | Victor Barrera | Versión inicial del README |
-| 1.0.0 | 2024-XX-XX | Eliezer Carrasco | Revisión y contribuciones |
-
----
-
-<div align="center">
-
-**Demo Barber - Barbería Premium**
-
-*Desarrollado con React, TypeScript y Vite*
-
-*Desplegado en Netlify con CI/CD automatizado*
-
-**© 2024 - Todos los derechos reservados**
-
-</div>
