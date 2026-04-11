@@ -706,10 +706,51 @@ npm run preview
 | `npm run dev` | Inicia servidor de desarrollo | Desarrollo local |
 | `npm run build` | Build de producción (incluye tsc) | Pre-deploy |
 | `npm run preview` | Previsualiza build local | Testing |
+| `npm run test` | Ejecuta tests unitarios (Vitest) | Validación |
 | `npm run lint` | Linting de código | Code quality |
 | `tsc` | Type checking | Validación de tipos |
 
-### 8.4 Configuración de Variables de Entorno
+### 8.4 Testing
+
+Este proyecto utiliza **Vitest** para testing unitario con **React Testing Library**.
+
+```bash
+# Ejecutar tests una vez
+npm test
+
+# Ejecutar tests en modo watch (desarrollo)
+npm run test:watch
+```
+
+#### Convenciones de Tests
+
+- **Framework:** Vitest + React Testing Library
+- **Archivos:** `*.test.{ts,tsx}` en el mismo directorio que el archivo a testear
+- **Ubicación:** `src/components/`
+- **Tipos de tests:** Smoke tests (validación de renderizado)
+
+#### Ejemplo de Test
+
+```typescript
+import { describe, it, expect } from 'vitest'
+import { render, screen } from '@testing-library/react'
+import App from '../App'
+
+describe('App Smoke Tests', () => {
+  it('should render the app without crashing', () => {
+    render(<App />)
+    expect(document.body).toBeDefined()
+  })
+
+  it('should display the business name', () => {
+    render(<App />)
+    const businessName = screen.getByText('Cris Barber')
+    expect(businessName).toBeInTheDocument()
+  })
+})
+```
+
+### 8.5 Configuración de Variables de Entorno
 
 Crear archivo `.env.local` en la raíz:
 
