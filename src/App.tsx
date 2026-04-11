@@ -10,7 +10,11 @@ import {
   Instagram, 
   Facebook, 
   Twitter,
-  X
+  X,
+  GitBranch,        
+  Settings,         
+  GitMerge,        
+  Activity
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -262,6 +266,7 @@ export default function App() {
             <a href="#services" className="text-sm uppercase tracking-widest hover:text-[#D4AF37] transition-colors">Servicios</a>
             <a href="#gallery" className="text-sm uppercase tracking-widest hover:text-[#D4AF37] transition-colors">Galería</a>
             <a href="#testimonials" className="text-sm uppercase tracking-widest hover:text-[#D4AF37] transition-colors">Reseñas</a>
+            <a href="#devops" className="text-sm uppercase tracking-widest hover:text-[#D4AF37] transition-colors">DevOps</a> {/* ← AGREGAR */}
             <Button onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}>
               Reservar Ahora
             </Button>
@@ -524,6 +529,152 @@ export default function App() {
           </div>
         </div>
       </section>
+      {/* DevOps Section */}
+<section id="devops" className="py-24 px-6 bg-[#111111]">
+  <div className="max-w-7xl mx-auto">
+    <SectionTitle 
+      title="Ingeniería DevOps" 
+      subtitle="La columna vertebral de nuestro proyecto" 
+    />
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+      {/* Card 1: Control de Versiones */}
+      <div className="bg-[#171717] p-8 rounded-xl border border-white/5 hover:border-[#D4AF37]/50 transition-all">
+        <div className="w-14 h-14 bg-[#D4AF37]/10 rounded-full flex items-center justify-center mb-6">
+          <GitBranch className="text-[#D4AF37]" size={28} />
+        </div>
+        <h3 className="text-xl font-bold uppercase tracking-wide mb-4 text-white">
+          Control de Versiones
+        </h3>
+        <p className="text-neutral-400 text-sm mb-6">
+          Gestión de código con Git y GitHub. Repositorio centralizado con estrategias de branching profesionales.
+        </p>
+        <ul className="space-y-3">
+          <li className="flex items-center gap-3 text-sm text-neutral-300">
+            <Check size={16} className="text-[#D4AF37]" />
+            Repositorio centralizado
+          </li>
+          <li className="flex items-center gap-3 text-sm text-neutral-300">
+            <Check size={16} className="text-[#D4AF37]" />
+            Estrategia GitFlow
+          </li>
+          <li className="flex items-center gap-3 text-sm text-neutral-300">
+            <Check size={16} className="text-[#D4AF37]" />
+            Code review obligatorio
+          </li>
+        </ul>
+      </div>
+
+      {/* Card 2: Pipeline CI/CD */}
+      <div className="bg-[#171717] p-8 rounded-xl border border-white/5 hover:border-[#D4AF37]/50 transition-all">
+        <div className="w-14 h-14 bg-[#D4AF37]/10 rounded-full flex items-center justify-center mb-6">
+          <Settings className="text-[#D4AF37]" size={28} />
+        </div>
+        <h3 className="text-xl font-bold uppercase tracking-wide mb-4 text-white">
+          Pipeline CI/CD
+        </h3>
+        <p className="text-neutral-400 text-sm mb-6">
+          Automatización del flujo de desarrollo. Cada cambio pasa por tests y deploy automático.
+        </p>
+        <ul className="space-y-3">
+          <li className="flex items-center gap-3 text-sm text-neutral-300">
+            <Check size={16} className="text-[#D4AF37]" />
+            Builds automatizados
+          </li>
+          <li className="flex items-center gap-3 text-sm text-neutral-300">
+            <Check size={16} className="text-[#D4AF37]" />
+            TypeScript validation
+          </li>
+          <li className="flex items-center gap-3 text-sm text-neutral-300">
+            <Check size={16} className="text-[#D4AF37]" />
+            Deploy a Netlify
+          </li>
+        </ul>
+      </div>
+
+      {/* Card 3: Workflow GitFlow */}
+      <div className="bg-[#171717] p-8 rounded-xl border border-white/5 hover:border-[#D4AF37]/50 transition-all">
+        <div className="w-14 h-14 bg-[#D4AF37]/10 rounded-full flex items-center justify-center mb-6">
+          <GitMerge className="text-[#D4AF37]" size={28} />
+        </div>
+        <h3 className="text-xl font-bold uppercase tracking-wide mb-4 text-white">
+          Workflow GitFlow
+        </h3>
+        <p className="text-neutral-400 text-sm mb-6">
+          Metodología estructurada de ramificación. Aislamiento de features y hotfixes controlados.
+        </p>
+        <ul className="space-y-3">
+          <li className="flex items-center gap-3 text-sm text-neutral-300">
+            <Check size={16} className="text-[#D4AF37]" />
+            Ramas: main, develop
+          </li>
+          <li className="flex items-center gap-3 text-sm text-neutral-300">
+            <Check size={16} className="text-[#D4AF37]" />
+            Features & hotfixes
+          </li>
+          <li className="flex items-center gap-3 text-sm text-neutral-300">
+            <Check size={16} className="text-[#D4AF37]" />
+            Conventional Commits
+          </li>
+        </ul>
+      </div>
+
+      {/* Card 4: Monitoreo */}
+      <div className="bg-[#171717] p-8 rounded-xl border border-white/5 hover:border-[#D4AF37]/50 transition-all">
+        <div className="w-14 h-14 bg-[#D4AF37]/10 rounded-full flex items-center justify-center mb-6">
+          <Activity className="text-[#D4AF37]" size={28} />
+        </div>
+        <h3 className="text-xl font-bold uppercase tracking-wide mb-4 text-white">
+          Monitoreo
+        </h3>
+        <p className="text-neutral-400 text-sm mb-6">
+          Observabilidad del sistema. Logs en tiempo real y status de despliegues.
+        </p>
+        <ul className="space-y-3">
+          <li className="flex items-center gap-3 text-sm text-neutral-300">
+            <Check size={16} className="text-[#D4AF37]" />
+            GitHub Actions logs
+          </li>
+          <li className="flex items-center gap-3 text-sm text-neutral-300">
+            <Check size={16} className="text-[#D4AF37]" />
+            Status badges
+          </li>
+          <li className="flex items-center gap-3 text-sm text-neutral-300">
+            <Check size={16} className="text-[#D4AF37]" />
+            Deploy previews
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Tech Stack Badge */}
+    <div className="bg-[#0a0a0a] rounded-xl border border-[#D4AF37]/20 p-8 text-center">
+      <h4 className="text-[#D4AF37] text-sm font-bold uppercase tracking-widest mb-6">
+        Stack Tecnológico DevOps
+      </h4>
+      <div className="flex flex-wrap justify-center gap-4">
+        <span className="px-4 py-2 bg-[#171717] rounded-full text-white text-sm border border-white/10">
+          GitHub
+        </span>
+        <span className="px-4 py-2 bg-[#171717] rounded-full text-white text-sm border border-white/10">
+          GitHub Actions
+        </span>
+        <span className="px-4 py-2 bg-[#171717] rounded-full text-white text-sm border border-white/10">
+          Netlify
+        </span>
+        <span className="px-4 py-2 bg-[#171717] rounded-full text-white text-sm border border-white/10">
+          Vite
+        </span>
+        <span className="px-4 py-2 bg-[#171717] rounded-full text-white text-sm border border-white/10">
+          TypeScript
+        </span>
+        <span className="px-4 py-2 bg-[#171717] rounded-full text-white text-sm border border-white/10">
+          React
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="bg-[#050505] py-16 px-6 border-t border-white/5">
@@ -544,13 +695,14 @@ export default function App() {
           </div>
           
           <div>
-            <h4 className="text-white font-bold uppercase tracking-widest mb-6">Enlaces Rápidos</h4>
-            <ul className="space-y-4 text-neutral-500 text-sm">
-              <li><a href="#" className="hover:text-[#D4AF37] transition-colors">Inicio</a></li>
-              <li><a href="#services" className="hover:text-[#D4AF37] transition-colors">Servicios</a></li>
-              <li><a href="#gallery" className="hover:text-[#D4AF37] transition-colors">Galería</a></li>
-              <li><a href="#booking" className="hover:text-[#D4AF37] transition-colors">Reservar Cita</a></li>
-            </ul>
+     <h4 className="text-white font-bold uppercase tracking-widest mb-6">Enlaces Rápidos</h4>
+        <ul className="space-y-4 text-neutral-500 text-sm">
+        <li><a href="#" className="hover:text-[#D4AF37] transition-colors">Inicio</a></li>
+        <li><a href="#services" className="hover:text-[#D4AF37] transition-colors">Servicios</a></li>
+        <li><a href="#gallery" className="hover:text-[#D4AF37] transition-colors">Galería</a></li>
+        <li><a href="#booking" className="hover:text-[#D4AF37] transition-colors">Reservar Cita</a></li>
+        <li><a href="#devops" className="hover:text-[#D4AF37] transition-colors">DevOps</a></li> {/* ← AGREGAR */}
+      </ul>
           </div>
 
           <div>
