@@ -460,11 +460,9 @@ Descripción:
 - Integración con servicios de barbería
 - Validación de disponibilidad
 
-Comandos usados:
-git checkout -b feature/reservas-calendario
-git commit -m "feat(booking): agregar calendario de reservas"
-git push origin feature/reservas-calendario
-```
+[![Tests](https://github.com/$(github_repo)/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/$(github_repo)/actions/workflows/test.yml)
+
+# Run and deploy your AI Studio app
 
 #### Feature 2: Galería de Trabajos
 
