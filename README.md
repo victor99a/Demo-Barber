@@ -18,7 +18,7 @@
 3. [Estrategia de Ramificación - GitFlow](#estrategia-de-ramificación---gitflow)
 4. [Guía de Buenas Prácticas](#guía-de-buenas-prácticas)
 5. [Flujo de Merge y Pull Requests](#flujo-de-merge-y-pull-requests)
-6. [Automatización CI/CD](#automatización-cicd)
+6. [DevOps y Automatización CI/CD](#devops-y-automatización-cicd)
 7. [Trazabilidad de Cambios](#trazabilidad-de-cambios)
 8. [Declaración de Uso de IA](#declaración-de-uso-de-ia)
 9. [Reflexiones Individuales](#reflexiones-individuales)
@@ -27,9 +27,9 @@
 
 ---
 
-## Descripción del Proyecto
+## DevOps y Automatización CI/CD
 
-### Microservicio Seleccionado: Frontend de Barbería
+### 5.1 Flujo de GitHub Actions
 
 **Demo Barber** es una aplicación web frontend desarrollada para una barbería premium que proporciona las siguientes funcionalidades:
 
