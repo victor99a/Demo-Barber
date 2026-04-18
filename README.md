@@ -60,7 +60,7 @@ Infraestructura:
 
 ### Enlace al Proyecto
 
-🔗 **URL en Producción:** [https://demo-barber.netlify.app](https://demo-barber.netlify.app)
+🔗 **URL en Producción:** [[https://demo-barber.netlify.app](https://demo-barber.netlify.app](https://vabdemobarber.netlify.app/))
 
 ---
 
@@ -68,26 +68,26 @@ Infraestructura:
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│                   NAVEGADOR USUARIO                  │
+│                   NAVEGADOR USUARIO                 │
 │              (Chrome, Firefox, Safari)              │
 └─────────────────────┬───────────────────────────────┘
                       │
                       ▼
 ┌─────────────────────────────────────────────────────┐
-│                  CDN - NETLIFY                       │
-│           (distribución global de assets)            │
+│                  CDN - NETLIFY                      │
+│           (distribución global de assets)           │
 └─────────────────────┬───────────────────────────────┘
                       │
                       ▼
 ┌─────────────────────────────────────────────────────┐
-│              REPOSITORIO GITHHUB                     │
+│              REPOSITORIO GITHHUB                    │
 │         victor99a/Demo-Barber (main)                │
-│                                                      │
-│  ┌──────────────┐  ┌──────────────┐                │
-│  │   GitHub     │  │  GitHub      │                │
-│  │   Actions    │──│  Repository  │                │
-│  │  (CI/CD)     │  │  (Code)      │                │
-│  └──────────────┘  └──────────────┘                │
+│                                                     │
+│  ┌──────────────┐  ┌──────────────┐                 │
+│  │   GitHub     │  │  GitHub      │                 │
+│  │   Actions    │──│  Repository  │                 │
+│  │  (CI/CD)     │  │  (Code)      │                 │
+│  └──────────────┘  └──────────────┘                 │
 └─────────────────────────────────────────────────────┘
 ```
 
