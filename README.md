@@ -343,6 +343,10 @@ Desarrollador Principal / DevOps Engineer
 
 #### Reflexión Personal:
 
+Para mí, este proyecto fue la oportunidad perfecta para aplicar un estándar profesional a un flujo real. Lo que más rescato es haber configurado un pipeline de CI/CD que realmente cuida el código: el uso de artefactos y la separación de ambientes (Preview y Prod) asegura que nada se rompa en el camino.
+
+La IA fue clave como mi 'copiloto' para acelerar la documentación y auditar los archivos YAML, permitiéndome enfocarme en la arquitectura. El mayor desafío fue mantener la disciplina con GitFlow y la sincronización entre ramas, pero lo resolvimos con automatización. Me voy con la seguridad de que este nivel de trazabilidad y automatización es el que quiero replicar en cada proyecto, ya que me prepara para entregar software con calidad de nivel.
+
 **
 ---
 
