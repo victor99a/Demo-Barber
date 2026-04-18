@@ -650,7 +650,7 @@ export default function App() {
     {/* Tech Stack Badge */}
     <div className="bg-[#0a0a0a] rounded-xl border border-[#D4AF37]/20 p-8 text-center">
       <h4 className="text-[#D4AF37] text-sm font-bold uppercase tracking-widest mb-6">
-       Stack Tecnológico Ingeniería DevOps
+       Stack Ingeniería DevOps
       </h4>
       <div className="flex flex-wrap justify-center gap-4">
         <span className="px-4 py-2 bg-[#171717] rounded-full text-white text-sm border border-white/10">
@@ -685,7 +685,7 @@ export default function App() {
               <span className="text-2xl font-bold tracking-widest uppercase">{BUSINESS_CONFIG.name}</span>
             </div>
             <p className="text-neutral-500 max-w-sm mb-8">
-              Elevando el estándar del cuidado masculino. Donde la tradición se une a la precisión moderna.
+              Elevando el estándar del cuidado. Donde la tradición se une a la precisión moderna.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-[#171717] flex items-center justify-center text-white hover:bg-[#D4AF37] hover:text-black transition-colors"><Instagram size={18} /></a>
