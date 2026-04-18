@@ -650,7 +650,7 @@ export default function App() {
     {/* Tech Stack Badge */}
     <div className="bg-[#0a0a0a] rounded-xl border border-[#D4AF37]/20 p-8 text-center">
       <h4 className="text-[#D4AF37] text-sm font-bold uppercase tracking-widest mb-6">
-       Stack Tecnológico Ingeniería DevOps
+       Stack DevOps PRO
       </h4>
       <div className="flex flex-wrap justify-center gap-4">
         <span className="px-4 py-2 bg-[#171717] rounded-full text-white text-sm border border-white/10">
